@@ -1,0 +1,160 @@
+\documentclass[singlesided,
+               paper=a4,
+               fontsize=10pt
+              ]{my-resume}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set geometry
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength\highlightwidth{8cm}
+\setlength\headerheight{4cm}            % note that margintop gets added to this value, i.e. the header bar is 5cm
+\setlength\marginleft{1cm}
+\setlength\marginright{\marginleft}      % needs to be 1.5 times to be actually equal. why?
+\setlength\margintop{1cm}
+\setlength\marginbottom{1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FONTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{fontspec}
+\setmainfont{Carlito}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\colorlet{highlightbarcolor}{lightgray}
+\colorlet{headerbarcolor}{darkgray}
+
+\colorlet{headerfontcolor}{white}
+\colorlet{accent}{awesome-red}
+\colorlet{heading}{black}
+\colorlet{emphasis}{black}
+\colorlet{body}{black}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\name{Dmytro Karpus}
+\tagline{
+    I know React and Vue, and also can use them with  Next.js or Nuxt.js respictivly.\\
+    Have good knowledge of math, so if it is needed can develop math releated things.\\
+    In addition, I know backend technologies such as Django, PHP, Node.js and can write \\
+    backend using them. Of course, I am ready to learn new technologies or programming  \\
+    languages to use them in new projects.
+}
+\photo[round]{picture.jpg}{\dimexpr \headerheight-\marginbottom}   % make photo exactly match the header with margintop/marginright/marginbottom as margin
+
+\makeheader
+
+\highlightbar{
+
+    \section{Contact}
+    
+    \email{dmytro.karpusss@gmail.com}
+    \phone{+48 574 704 272}
+    \location{Kraków}
+    \vspace{0.5em}
+    \github{@Dimassss}{https://github.com/Dimassss/IntelligenceAnalyticsTool}
+    \linkedin{@pilevoid}{https://www.linkedin.com/in/pilevoid/}
+    
+    \section{Skills}
+    
+    \skillsection{Programming}
+    \skill{React+Redux/Vue + Vuex}{4}
+    \skill{Next.js/Nuxt.js}{4}
+    \skill{Java Script/Type Script}{4}
+    \skill{Node.js}{4}
+    \skill{PHP}{4}
+    \skill{Python}{3}
+    \skill{HTML/CSS/SCSS}{4}
+    
+    \vspace{0.5em}
+    \skillsection{Operating Systems}
+    \skill{Linux}{4}
+    \skill{Windows}{5}
+    
+    \vspace{0.5em}
+    \skillsection{Software \& Tools}
+    \skill{Git}{4}
+    \skill{MySQL / Postgre SQL}{2}
+    \skill{Shell}{4}
+    
+    \vspace{0.5em}
+    \skillsection{Languages}
+    \skill{Ukrainian}{5}
+    \skill{Russian}{5}
+    \skill{English}{4}
+    \skill{Polish}{4}
+    \bigskip
+
+}
+\mainbar{
+    \section{About Me}
+    I started learning programming from school times, because that was interesting for me and still have passion to this. 
+    I have less than one year of commercial experience on part-time employment, but now I want work on full-time job as frontend developer.
+    As well, I have some projects on git, some of them public, so you can check them. I dont smoke and drink alcohol. I go to gym 3 times a week.
+    
+    \section[\faMortarBoard]{Education}
+    \job{09/2019 - 05/2023}
+        {Jagiellonian University, Kraków}
+        {Bachelor of Theory Math}
+        {}
+
+    \section{General Skills}
+    \smallskip % additional skip because tag outlines use up space
+    \tag{React JS}
+    \tag{Redux}
+    \tag{React Router}
+    \tag{Ant UI}
+    \tag{Next.js}
+    \tag{Vue}
+    \tag{Vue Router}
+    \tag{Vuex}
+    \tag{Vuetify}
+    \tag{Nuxt.js}
+    \tag{Node.js}
+    \tag{npm}
+    \tag{webpack}
+    \tag{git}
+    \tag{HTML}
+    \tag{CSS3}
+    \tag{SCSS}
+    \tag{Java Script}
+    \tag{Type Script}
+    \tag{Postgre SQL}
+    \tag{MySQL}
+    \tag{PHP}
+    \tag{Python}
+    \tag{Django}
+    \tag{Django REST}
+    \tag{OOP}
+    \tag{REST API}
+    \tag{Linux}
+    \tag{Math Analysis}
+    \tag{Linear Algebra}
+    \tag{Topology}
+    \tag{Abstract Algebra}
+    \tag{Partial Defferential Equations}
+    \tag{Ordinary Differential Equations}
+    \tag{Cryptografy}
+    \tag{Graph Theory}
+    \tag{Complex Analysis}
+    \tag{Functional Analysis}
+    \tag{Makroekonomy}
+    \tag{Probability Theory}
+    \tag{Measure theory and integration}
+    
+}
+\makebody
+\end{document}
