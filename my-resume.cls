@@ -303,6 +303,8 @@
 \newcommand{\github}[2]{\infofield{\faGithub}{\href{#2}{#1}}}
 \newcommand{\orcid}[2]{\infofield{\aiOrcid}{\href{#2}{#1}}}
 \newcommand{\ads}[2]{\infofield{\aiADS}{\href{#2}{#1}}}
+\newcommand{\telegram}[2]{\infofield{\faSend}{\href{#2}{#1}}}
+
 
 
 % highlight bar
@@ -412,6 +414,10 @@
     \textcolor{emphasis}{\textbf{#1}}\hfill
     \foreach \x in {1,...,5}{%
       \space{\ifnumgreater{\x}{#2}{\color{gray}}{\color{accent}}\faCircle}}\par%
+}
+
+\newcommand{\skillo}[1]{%
+    \textcolor{emphasis}{\textbf{#1}}\hfill \\
 }
 
 % skill without any charts
